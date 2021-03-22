@@ -9,6 +9,34 @@ body{
     height: 100vh;
     background: #374046;
 }
+.header {
+    display: flex;
+}
+.title {
+    
+    text-align: center;
+}
+h1 {
+    width: 300px;
+    border: solid 3px white;
+    margin: 20px;
+    padding: 20px;
+}
+.dbs {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-spacing: 80px 0px;
+    font-size: 25px;
+}
+
+td{
+    border: solid 1px white;
+    padding: 10px;
+    cursor: pointer;
+}
 .image-form {
     width: 300px;
     height: 200px;
@@ -19,14 +47,13 @@ body{
     bottom: 0;
     margin: auto;
     overflow: auto;
-}
-.btn {
-    
+    text-align: center;
 }
 
 input[type="file"] {
     display: none;
 }
+
 .custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
@@ -46,4 +73,14 @@ input[type="file"] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer; 
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
 }
