@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <title>Application</title>
 
     </head>
@@ -20,7 +20,7 @@
                          
                     </div>
                 <div class="submit">
-                    <input id="submitButton" type="submit" name="submit_image" value="Sumbit">
+                    <input id="submitButton" type="submit" name="submit_image" value="Sumbit"/>
                 </div>
             </form>
         </div>
