@@ -39,6 +39,7 @@
         <footer id="footer"> Active Database: MySQL</footer>
     </body>
 <?php
-   include ('php/insertImages.php') 
+    include ('php/insertImages.php'); 
+    include ('php/view.php'); 
 ?>    
 </html>
