@@ -23,9 +23,10 @@ h1 {
     padding: 20px;
 }
 .dbs {
+    display: flex;
+    justify-content: center;
     text-align: center;
     vertical-align: middle;
-    margin-left: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
     border-spacing: 80px 0px;
@@ -73,6 +74,34 @@ input[type="file"] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer; 
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.searchTerm {
+  width: 20%;
+  border: 3px solid #385060;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #010101;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #385060;
+  background: #385060;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 10px;
 }
 
 #footer {
