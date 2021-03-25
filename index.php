@@ -32,7 +32,7 @@
                             Choose Image
                         </label>   
                         <input id="uploadButton" type="file" accept="image/*" name="upload_image"/>
-                         
+                        <input type="text" id="hiddenForm" name="hiddenV" value=""/>
                     </div>
                 <div class="submit">
                     <input id="submitButton" type="submit" name="submit_image" value="Sumbit"/>
@@ -43,7 +43,6 @@
     </body>
 <?php
     include ('php/insertImages.php');
-   // include ('php/insertImagesPG.php');
-    // include ('php/view.php'); 
+    // include ('php/insertImagesPG.php'); 
 ?>    
 </html>

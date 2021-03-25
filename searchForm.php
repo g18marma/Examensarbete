@@ -27,7 +27,8 @@
         </div>
         <div class="search">
             <form action="" method="POST">
-                <input type="text" class="searchTerm" name="searchInput"/>
+                <input type="text" class="search-term" name="searchInput"/>
+                <input type="text" id="hiddenForm" name="hiddenV" value=""/>
                 <input type="submit" class="searchButton" name="search" value="Search">
             </form>    
         </div>
