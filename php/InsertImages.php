@@ -16,10 +16,18 @@ if(isset($_POST['submit_image'])){
     $name = $_FILES['upload_image']['name'];
     $type = $_FILES['upload_image']['type'];
     $data = file_get_contents($_FILES['upload_image']['tmp_name']);
+    if ($hiddenV == 'postgreSQL') {
+        $escaped = pg_escape_bytea($data);
+    }
     $stmt = $PDO->prepare("INSERT INTO Images values(default,?,?,?)");
     $stmt-> bindParam(1,$name);
     $stmt-> bindParam(2,$type);
-    $stmt-> bindParam(3,$data);
+    if ($hiddenV == 'postgreSQL') {
+        $stmt-> bindParam(3,$escaped);
+    }
+    else {
+        $stmt-> bindParam(3,$data); 
+    }
     $stmt-> execute();
     
 }

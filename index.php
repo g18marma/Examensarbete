@@ -43,6 +43,5 @@
     </body>
 <?php
     include ('php/insertImages.php');
-    // include ('php/insertImagesPG.php'); 
 ?>    
 </html>
