@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="header">
-            <div class="title">
-                <h1>Upload Image</h1>
+            <div class="title" id="uploadPage">
+                <a href="index.php"><h1>Upload Image</h1></a>
             </div>
             <div>
                 <table class="dbs">
@@ -20,7 +20,10 @@
                         <td id="togglePostgresql"href="#">PostgreSQL</td>
                     </tr>
                 </table>
-            </div>    
+            </div>
+            <div class="title" id="submitPage">
+                <a href="searchForm.php"><h1>Search Image</h1></a>
+            </div>
         </div>
         <div class="image-form">
             <form method="POST" action="#" enctype="multipart/form-data" class="sendForm">
@@ -39,7 +42,8 @@
         <footer id="footer"> Active Database: MySQL</footer>
     </body>
 <?php
-    include ('php/insertImages.php'); 
-    include ('php/view.php'); 
+    include ('php/insertImages.php');
+   // include ('php/insertImagesPG.php');
+    // include ('php/view.php'); 
 ?>    
 </html>

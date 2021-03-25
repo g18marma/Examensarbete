@@ -11,7 +11,7 @@ if(isset($_POST['search'])){
     $stmt->execute();
 
     while ($row = $stmt->fetch()){ 
-        echo '<div class="caption"><img src="data:image/jpeg;base64,'.base64_encode($row['data']).'"/></div>';
+        echo '<div style="margin: auto; margin-top: 50px;" class="caption"><img style= "margin-left: auto; margin-right: auto; display: block;" src="data:image/jpeg;base64,'.base64_encode($row['data']).'"/></div>';
     }   
 }
 

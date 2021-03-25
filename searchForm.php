@@ -10,7 +10,7 @@
     <body>
         <div class="header">
             <div class="title">
-                <h1>Search Image</h1>
+                <a href="index.php"><h1>Upload Image</h1></a>
             </div>
             <div>
                 <table class="dbs">
@@ -20,18 +20,20 @@
                         <td id="togglePostgresql"href="#">PostgreSQL</td>
                     </tr>
                 </table>
-            </div>    
+            </div>
+            <div class="title" id="submitPage">
+                <a href="searchForm.php"><h1>Search Image</h1></a>
+            </div>
         </div>
-        
         <div class="search">
-            <input type="text" class="searchTerm" placeholder="What are you looking for?"/>
-            <button type="submit" class="searchButton">Search</button>
-
+            <form action="" method="POST">
+                <input type="text" class="searchTerm" name="searchInput"/>
+                <input type="submit" class="searchButton" name="search" value="Search">
+            </form>    
         </div>
         <footer id="footer"> Active Database: MySQL</footer>
     </body>
 <?php
-
-    // include ('php/view.php'); 
+    require 'php/view.php';
 ?>    
 </html>
