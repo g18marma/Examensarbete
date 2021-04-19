@@ -1,3 +1,18 @@
+<script>
+    
+    function testData(){
+        var cnt = parseInt(localStorage.getItem("Counter"));
+        let measurement=new Date();
+        measurement = measurement.getTime();
+        str=localStorage.getItem("newVal");
+        if (cnt == 2) {
+            str="New value: \n";  
+        }
+        str+= measurement+"\n";
+        localStorage.setItem("newVal",str);
+    }
+    
+</script>
 <?php
 // Fetch image from data based on serach input
 
@@ -33,8 +48,10 @@ if(isset($_POST['search'])){
             ob_end_clean();
             $image = $contents;
         }
-        //display image
-        echo '<div style="margin: auto; margin-top: 50px;" class="caption"><img style= "margin-left: auto; margin-right: auto; display: block;" src="data:image/jpeg;base64,'.base64_encode($image).'"/></div>';  
+        //convert and display image
+        echo '<div style="margin-top: 50px;" class="caption"><img style= "margin-left: auto; margin-right: auto; display: block;" src="data:image/jpeg;base64,'.base64_encode($image).'"/></div>';
+        
+        echo '<script type="text/javascript">testData();</script>';
     }   
 }
 
