@@ -27,9 +27,9 @@
         </div>
         <div class="search">
             <form action="" method="POST">
-                <input type="text" class="search-term" name="searchInput"/>
+                <input type="text" id="searchTerm" class="search-term" name="searchInput"/>
                 <input type="text" id="hiddenForm" name="hiddenV" value=""/>
-                <input type="submit" class="searchButton" name="search" value="Search">
+                <input type="submit" id="searchButton" class="searchButton" name="search" value="Search">
             </form>    
         </div>
         <footer id="footer"> Active Database: MySQL</footer>

@@ -27,13 +27,13 @@
         </div>
         <div class="image-form">
             <form method="POST" action="#" enctype="multipart/form-data" class="sendForm">
-                    <div class="upload">
-                        <label for="uploadButton" class="custom-file-upload">
-                            Choose Image
-                        </label>   
-                        <input id="uploadButton" type="file" accept="image/*" name="upload_image"/>
-                        <input type="text" id="hiddenForm" name="hiddenV" value=""/>
-                    </div>
+                <div class="upload">
+                    <label for="uploadButton" class="custom-file-upload" id="chooseImage">
+                        Choose Image
+                    </label>   
+                    <input id="uploadButton" type="file" multiple="multiple" accept="image/*" name="upload_image"/>
+                    <input type="text" id="hiddenForm" name="hiddenV" value=""/>
+                </div>
                 <div class="submit">
                     <input id="submitButton" type="submit" name="submit_image" value="Sumbit"/>
                 </div>
