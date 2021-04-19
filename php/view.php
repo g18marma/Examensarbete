@@ -19,12 +19,12 @@
 //db connection
 if(isset($_POST['search'])){
     
-    $hiddenV = $_POST['hiddenV'];
+    $activeDB = $_POST['hiddenV'];
     
-    if ($hiddenV == 'mySQL'){
+    if ($activeDB == 'mySQL'){
         require 'MySQLcon.php';
     }   
-    else if ($hiddenV == 'mariaDB'){
+    else if ($activeDB == 'mariaDB'){
         require 'MariaDBcon.php';
     }
     else {
@@ -38,7 +38,7 @@ if(isset($_POST['search'])){
 
     while ($row = $stmt->fetch()){ 
         $image = $row['data'];
-        if ($hiddenV == 'postgreSQL'){
+        if ($activeDB == 'postgreSQL'){
             // output buffering.
             ob_start();
             //This will normally output the image, but because of ob_start(), it won't.
